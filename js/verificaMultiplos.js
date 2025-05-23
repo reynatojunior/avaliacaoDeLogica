@@ -3,7 +3,7 @@ function verificaMultiplos() {
   const fim = parseInt(prompt("Digite o número final:"));
   
   if (isNaN(inicio) || isNaN(fim) || inicio > fim) {
-    document.write("Intervalo inválido. Digite números válidos onde o início seja menor ou igual ao fim.");
+    document.writeln("Intervalo inválido. Digite números válidos onde o início seja menor ou igual ao fim.");
     return;
   }
 
@@ -16,9 +16,9 @@ function verificaMultiplos() {
   }
 
   if (encontrados.length > 0) {
-    document.write("Números pares e múltiplos de 3: " + encontrados.join(", "));
+    document.writeln("Números pares e múltiplos de 3: " + encontrados.join(", "));
   } else {
-    document.write("Nenhum número no intervalo satisfaz as condições (par e múltiplo de 3).");
+    document.writeln("Nenhum número no intervalo satisfaz as condições (par e múltiplo de 3).");
   }
 }
 
